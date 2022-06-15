@@ -15,3 +15,7 @@ firestore에서 data_apt와 data_anm 콜렉션을 호출한다.
 평균 거리를 이용해 점수를 매기고, 데이터 프레임을 생성한다.
 이후 최종점수를 이용해 K-Means를 진행하고 생성된 군집을 통해 매물을 분류한다.
 분류된 매물 중 사용자가 원하는 매물과 가장 가까운 매물부터 번호를 붙인 후, recommend 콜렉션에 저장한다.
+
+<h3> 4. kmeans_score.ipynb </h3>
+
+K-means를 진행하기 위해 Elbow method와 Silhouette Score을 진행한 코드
