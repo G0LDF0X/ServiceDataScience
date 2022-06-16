@@ -22,3 +22,6 @@ K-means를 진행하기 위해 Elbow method와 Silhouette Score을 진행한 코
 
 <h3> 5. house_crawling.py </h3>
 매물을 크롤링하여 수집하는 코드
+
+<h3> 6. petband 폴더 </h3>
+Android Studio에서 dart를 이용해 어플리케이션을 구현한 코드
