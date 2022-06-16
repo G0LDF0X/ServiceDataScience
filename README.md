@@ -19,3 +19,6 @@ firestore에서 data_apt와 data_anm 콜렉션을 호출한다.
 <h3> 4. kmeans_score.ipynb </h3>
 
 K-means를 진행하기 위해 Elbow method와 Silhouette Score을 진행한 코드
+
+<h3> 5. house_crawling.py </h3>
+매물을 크롤링하여 수집하는 코드
