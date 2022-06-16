@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "399924915194",
+    "project_id": "petbang-9b8f3",
+    "storage_bucket": "petbang-9b8f3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:399924915194:android:8fcce4a20a9eee65bf5243",
+        "android_client_info": {
+          "package_name": "com.example.petbang"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "399924915194-3qbc9atv285gfm7stso40u2f264d9kqk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfRUW01unuQ5DYDQjRBCf2x9GLfvj7qJo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "399924915194-3qbc9atv285gfm7stso40u2f264d9kqk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
