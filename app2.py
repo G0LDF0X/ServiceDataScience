@@ -3,12 +3,6 @@ import os
 terminal_command = "pip install firebase_admin && pip install haversine && pip install flask && pip install pandas && pip install numpy && pip install sklearn && pip install waitress"
 os.system(terminal_command)
 
-# terminal_command = "pip install haversine"
-# os.system(terminal_command)
-
-# terminal_command = "pip install flask"
-# os.system(terminal_command)
-
 from flask import Flask
 from flask import Flask, jsonify, abort
 import firebase_admin
@@ -21,11 +15,6 @@ import pandas as pd
 import time
 from sklearn.cluster import KMeans as KMeans_
 import warnings
-
-# terminal_command = "export FLASK_APP = app2"
-# os.system(terminal_command)
-
-
 
 def extract_xy(docs):
   x = []
@@ -95,7 +84,7 @@ def cal_score(first, second, third):
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/', method=['POST'])
 def working():
   warnings.filterwarnings('ignore')
 
@@ -121,8 +110,8 @@ def working():
 
   final_score = cal_score(first_aver_dist, second_aver_dist, third_aver_dist)
 
-  final_df = pd.DataFrame({'주소': apt_address, '첫 번째 요소 평균 거리(km)' : first_aver_dist, '첫 번째 요소 개수' : first_anm_num, '두 번째 요소 평균 거리(km)' : second_aver_dist, '두 번째 요소 개수' : second_anm_num,
-                           '세 번째 요소 평균 거리(km)' : third_aver_dist, '세 번째 요소 개수' : third_anm_num, '최종 점수' : final_score})
+  final_df = pd.DataFrame({'주소': apt_address, '첫 번째 요소 평균 거리(km)' : first_aver_dist, '첫 번째 요소 개수' : first_anm_num, '두 번째 요소 평균 거리(km)' : second_aver_dist,
+                         '두 번째 요소 개수' : second_anm_num, '세 번째 요소 평균 거리(km)' : third_aver_dist, '세 번째 요소 개수' : third_anm_num, '최종 점수' : final_score})
   
   X = final_df[['최종 점수', '최종 점수']]
 
@@ -195,8 +184,6 @@ def JsonApp(app):
 
     return app
 
-
-# app = JsonApp(Flask(__name__))
 
 
 @app.route('/api')
