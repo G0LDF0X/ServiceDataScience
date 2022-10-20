@@ -1,4 +1,4 @@
-![슬라이드1](./images/슬라이드1.png)
+![슬라이드1](./images/슬라이드1.PNG)
 
 
 <h3> 1. preprocess.ipynb </h3>
