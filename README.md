@@ -1,3 +1,6 @@
+![슬라이드1](./images/슬라이드1.png)
+
+
 <h3> 1. preprocess.ipynb </h3>
   
 크롤링으로 수집된 csv 데이터에 위, 경도를 추가하고 DB에 import 가능한 json 형태로 바꾸는 데이터 전처리 코드
